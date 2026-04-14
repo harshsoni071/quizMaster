@@ -18,10 +18,10 @@ export default function Footer() {
           <p className="footer-heading">Explore</p>
           <ul className="footer-links">
             <li><a href="#">All Apps</a></li>
-            <li><a href="#">Productivity</a></li>
-            <li><a href="#">Fitness</a></li>
-            <li><a href="#">Finance</a></li>
-            <li><a href="#">Creative</a></li>
+            <li><a href="#">Govt</a></li>
+            <li><a href="#">Defence</a></li>
+            <li><a href="#">Banking</a></li>
+            <li><a href="#">Railway</a></li>
           </ul>
         </div>
 
