@@ -45,7 +45,7 @@ export default function AppCard({ app }) {
   return (
     <article
       className="app-card"
-      
+      onClick={handleClick}
       role="button"
       tabIndex={0}
       aria-label={`Download ${app.name}`}
@@ -62,7 +62,7 @@ export default function AppCard({ app }) {
             height={64}
           />
         </div>
-        <span className="category-pill">{app.category}</span>
+        {/* <span className="category-pill">{app.category}</span> */}
       </div>
 
       {/* App info */}
@@ -87,7 +87,7 @@ export default function AppCard({ app }) {
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <polygon points="5,3 19,12 5,21" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor" fill="none" />
           </svg>
-          <span onClick={handleClick}>Download</span>
+          <span>Download</span>
         </button>
       </div>
     </article>

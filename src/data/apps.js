@@ -170,7 +170,7 @@ export const CATEGORIES = ['All', 'Rajasthan Exam', 'Defence', 'Railway', 'UPSC'
 export const apps = [
   {
     id: 'Rajasthan',
-    name: 'Rajasthan Exam',
+    name: 'Lab Assistant Rajasthan',
     description: 'Deep work sessions with Pomodoro timers, task lists, and distraction blocking.',
     logo: rajasthanLogo,
     playStoreLink: 'https://play.google.com/store/apps/details?id=com.quizmaster.rajasthan.labassistant',
