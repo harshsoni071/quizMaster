@@ -12,7 +12,7 @@
 // //   featured    – boolean (shows first, highlighted)
 // // ─────────────────────────────────────────────────────────────
 
-// export const CATEGORIES = ['All', 'Banking', 'Defence', 'Railway', 'UPSC', 'Govt', 'Competitive']
+// export const CATEGORIES = ['All', 'Rajasthan Exam', 'Defence', 'Railway', 'UPSC', 'Govt', 'Competitive']
 
 // export const apps = [
 //   {
@@ -21,7 +21,7 @@
 //     description: 'Deep work sessions with Pomodoro timers, task lists, and distraction blocking.',
 //     logo: 'https://api.dicebear.com/7.x/shapes/svg?seed=focusflow&backgroundColor=4f46e5&size=128',
 //     playStoreLink: 'https://play.google.com/store',
-//     category: 'Banking',
+//     category: 'Rajasthan Exam',
 //     rating: 4.7,
 //     downloads: '2M+',
 //     featured: true,
@@ -87,7 +87,7 @@
 //     description: 'Voice-to-text notes with auto-transcription, tagging, and smart search.',
 //     logo: 'https://api.dicebear.com/7.x/shapes/svg?seed=claritynotes&backgroundColor=6366f1&size=128',
 //     playStoreLink: 'https://play.google.com/store',
-//     category: 'Banking',
+//     category: 'Rajasthan Exam',
 //     rating: 4.9,
 //     downloads: '1.1M+',
 //     featured: false,
@@ -162,17 +162,19 @@
 //   downloads   – short download count string
 //   featured    – boolean (shows first, highlighted)
 // ─────────────────────────────────────────────────────────────
+
+import rajasthanLogo from "../../src/assets/logos/Rajasthan.png"
  
-export const CATEGORIES = ['All', 'Banking', 'Defence', 'Railway', 'UPSC', 'Govt', 'Competitive']
+export const CATEGORIES = ['All', 'Rajasthan Exam', 'Defence', 'Railway', 'UPSC', 'Govt', 'Competitive']
 
 export const apps = [
   {
-    id: 'SSC Master',
-    name: 'SSC Master',
+    id: 'Rajasthan',
+    name: 'Rajasthan Exam',
     description: 'Deep work sessions with Pomodoro timers, task lists, and distraction blocking.',
-    logo: 'https://api.dicebear.com/7.x/shapes/svg?seed=focusflow&backgroundColor=4f46e5&size=128',
-    playStoreLink: 'https://play.google.com/store',
-    category: 'Banking',
+    logo: rajasthanLogo,
+    playStoreLink: 'https://play.google.com/store/apps/details?id=com.quizmaster.rajasthan.labassistant',
+    category: 'Rajasthan Exam',
     rating: 4.7,
     downloads: '2M+',
     featured: true,
@@ -200,8 +202,8 @@ export const apps = [
     featured: false,
   },
   {
-    id: 'Banking Master',
-    name: 'Banking Master',
+    id: 'Rajasthan Exam Master',
+    name: 'Rajasthan Exam Master',
     description: 'Minimalist drawing and illustration canvas with layer support and export.',
     logo: 'https://api.dicebear.com/7.x/shapes/svg?seed=sketchwave&backgroundColor=ec4899&size=128',
     playStoreLink: 'https://play.google.com/store',
@@ -238,7 +240,7 @@ export const apps = [
     description: 'Voice-to-text notes with auto-transcription, tagging, and smart search.',
     logo: 'https://api.dicebear.com/7.x/shapes/svg?seed=claritynotes&backgroundColor=6366f1&size=128',
     playStoreLink: 'https://play.google.com/store',
-    category: 'Banking',
+    category: 'Rajasthan Exam',
     rating: 4.9,
     downloads: '1.1M+',
     featured: false,

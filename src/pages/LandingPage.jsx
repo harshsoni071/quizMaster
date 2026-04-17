@@ -22,10 +22,7 @@ export default function LandingPage() {
       {/* ── Hero ──────────────────────────────────────────── */}
       <section className="hero">
         <div>
-          <div className="hero-kicker">
-            <span className="hero-kicker-dot" />
-            Curated &amp; Verified
-          </div>
+          
           <h1 className="hero-title">
             Apps worth<br />
             <em>your space.</em>
@@ -55,7 +52,7 @@ export default function LandingPage() {
       <hr className="section-divider" />
 
       {/* ── Featured Banner ────────────────────────────────── */}
-      {featured && <FeaturedBanner app={featured} />}
+      {/* {featured && <FeaturedBanner app={featured} />} */}
 
       {/* ── App Grid ──────────────────────────────────────── */}
       <section className="apps-section">
