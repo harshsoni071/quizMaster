@@ -3,8 +3,8 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <div className="footer-inner">
-        {/* Brand */}
+      {/* <div className="footer-inner">
+        
         <div className="footer-brand">
           <div className="footer-brand-name">Quiz<span>Master</span></div>
           <p className="footer-tagline">
@@ -13,7 +13,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Quick Links */}
+        
         <div>
           <p className="footer-heading">Explore</p>
           <ul className="footer-links">
@@ -25,7 +25,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Company */}
+        
         <div>
           <p className="footer-heading">Company</p>
           <ul className="footer-links">
@@ -36,7 +36,7 @@ export default function Footer() {
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
       <div className="footer-bottom">
         <span>© {year} QuizMaster. All rights reserved.</span>
