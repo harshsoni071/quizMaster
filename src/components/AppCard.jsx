@@ -74,7 +74,7 @@ export default function AppCard({ app }) {
       {/* Footer: rating + download */}
       <div className="card-footer">
         <div className="app-rating">
-          <StarRating rating={app.rating} />
+          <StarRating className="text-xl" rating={app.rating} />
           <span className="rating-text">{app.rating.toFixed(1)}</span>
         </div>
 
