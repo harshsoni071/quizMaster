@@ -58,8 +58,8 @@ export default function AppCard({ app }) {
             src={app.logo}
             alt={`${app.name} icon`}
             loading="lazy"
-            width={64}
-            height={64}
+            width={104}
+            height={104}
           />
         </div>
         {/* <span className="category-pill">{app.category}</span> */}
@@ -67,9 +67,9 @@ export default function AppCard({ app }) {
 
       {/* App info */}
       <h2 className="app-name">{app.name}</h2>
-      {app.description && (
+      {/* {app.description && (
         <p className="app-desc">{app.description}</p>
-      )}
+      )} */}
 
       {/* Footer: rating + download */}
       <div className="card-footer">

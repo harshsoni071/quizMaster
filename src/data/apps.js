@@ -164,7 +164,7 @@
 // ─────────────────────────────────────────────────────────────
 
 import rajasthanLogo from "../../src/assets/logos/Rajasthan.png"
- 
+
 // export const CATEGORIES = ['All', 'Rajasthan Exam', 'Defence', 'Railway', 'UPSC', 'Govt', 'Competitive']
 export const CATEGORIES = ['All', 'Rajasthan Exam']
 
@@ -172,7 +172,8 @@ export const apps = [
   {
     id: 'Rajasthan',
     name: 'Lab Assistant Rajasthan',
-    description: 'Smart quiz and mock test app for Rajasthan Lab Assistant exam.',
+    description: `Rajasthan Lab Assistant Quiz Master is a smart prep app with practice questions, topic-wise quizzes, and mock tests.
+It offers updated syllabus content, detailed explanations, and performance tracking.`,
     logo: rajasthanLogo,
     playStoreLink: 'https://play.google.com/store/apps/details?id=com.quizmaster.rajasthan.labassistant',
     category: 'Rajasthan Exam',
