@@ -3,7 +3,7 @@ import { apps, CATEGORIES } from "../data/apps";
 import AppCard from "../components/AppCard";
 import FeaturedBanner from "../components/FeaturedBanner";
 import BannerImage from "../assets/logos/Banner.png";
-import appImage from "../assets/logos/apps.png";
+import appImage from "../assets/logos/banner.png";
 
 export default function LandingPage() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -23,20 +23,11 @@ export default function LandingPage() {
     <>
       {/* ── Hero ──────────────────────────────────────────── */}
       <section>
-        <div
-          style={{
-            // height: "450px",
-            width: "100%",
-          }}
-        >
+        <div className="w-full h-[450px] md:h-[450px] h-[220px]">
           <img
             src={appImage}
             alt="banner"
-            style={{
-              maxHeight: "100%",
-              maxWidth: "100%",
-              objectFit: "contain",
-            }}
+            className="w-full h-full object-contain"
           />
         </div>
         <div className="hero">
