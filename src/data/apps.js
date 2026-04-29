@@ -175,7 +175,7 @@ export const apps = [
     description: `Rajasthan Lab Assistant Quiz Master is a smart prep app with practice questions, topic-wise quizzes, and mock tests.
 It offers updated syllabus content, detailed explanations, and performance tracking.`,
     logo: rajasthanLogo,
-    playStoreLink: 'https://play.google.com/store/apps/details?id=com.quizmaster.rajasthan.labassistant',
+    playStoreLink: 'https://play.google.com/store/apps/details?id=com.quizmaster.rajasthan.labassistantapp',
     category: 'Rajasthan Exam',
     rating: 4.7,
     downloads: '2M+',

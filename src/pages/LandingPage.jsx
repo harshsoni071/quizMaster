@@ -1,50 +1,70 @@
-import { useState, useMemo } from 'react'
-import { apps, CATEGORIES } from '../data/apps'
-import AppCard from '../components/AppCard'
-import FeaturedBanner from '../components/FeaturedBanner'
+import { useState, useMemo } from "react";
+import { apps, CATEGORIES } from "../data/apps";
+import AppCard from "../components/AppCard";
+import FeaturedBanner from "../components/FeaturedBanner";
+import BannerImage from "../assets/logos/Banner.png";
+import appImage from "../assets/logos/apps.png";
 
 export default function LandingPage() {
-  const [activeCategory, setActiveCategory] = useState('All')
+  const [activeCategory, setActiveCategory] = useState("All");
 
-  const featured = useMemo(() => apps.find(a => a.featured), [])
+  const featured = useMemo(() => apps.find((a) => a.featured), []);
 
   const filtered = useMemo(() => {
-    if (activeCategory === 'All') return apps
-    return apps.filter(a => a.category === activeCategory)
-  }, [activeCategory])
+    if (activeCategory === "All") return apps;
+    return apps.filter((a) => a.category === activeCategory);
+  }, [activeCategory]);
 
   // Compute total downloads display
-  const totalDownloads = '25M+'
-  const appCount = apps.length
+  const totalDownloads = "25M+";
+  const appCount = apps.length;
 
   return (
     <>
       {/* ── Hero ──────────────────────────────────────────── */}
-      <section className="hero">
-        <div>
-          
-          <h1 className="hero-title">
-            Apps worth<br />
-            <em>your space.</em>
-          </h1>
-          <p className="hero-subtitle">
-            Every app in QuizMaster is handpicked for quality, design, and usefulness.
-            No filler. No bloatware. Just great software.
-          </p>
+      <section>
+        <div
+          style={{
+            // height: "450px",
+            width: "100%",
+          }}
+        >
+          <img
+            src={appImage}
+            alt="banner"
+            style={{
+              maxHeight: "100%",
+              maxWidth: "100%",
+              objectFit: "contain",
+            }}
+          />
         </div>
+        <div className="hero">
+          <div>
+            <h1 className="hero-title">
+              Apps worth
+              <br />
+              <em>your space.</em>
+            </h1>
+            <p className="hero-subtitle">
+              Every app in QuizMaster is handpicked for quality, design, and
+              usefulness. No filler. No bloatware. Just great software.
+            </p>
+          </div>
 
-        <div className="hero-stats">
-          <div className="hero-stat">
-            <div className="hero-stat-number">{appCount}</div>
-            <div className="hero-stat-label">Apps listed</div>
-          </div>
-          <div className="hero-stat">
-            <div className="hero-stat-number">{totalDownloads}</div>
-            <div className="hero-stat-label">Downloads</div>
-          </div>
-          <div className="hero-stat">
-            <div className="hero-stat-number">4.6★</div>
-            <div className="hero-stat-label">Avg rating</div>
+          <div className="hero-stats">
+            <div className="hero-stat">
+              <div className="hero-stat-number">{appCount}</div>
+              <div className="hero-stat-label">Apps listed</div>
+            </div>
+            <div className="hero-stat">
+              <div className="hero-stat-number">{totalDownloads}</div>
+              <div className="hero-stat-label">Downloads</div>
+            </div>
+            <div className="hero-stat">
+              <div className="hero-stat-number">4.6★</div>
+              <div className="hero-stat-label">Avg rating</div>
+            </div>
           </div>
         </div>
       </section>
@@ -59,16 +79,20 @@ export default function LandingPage() {
         <div className="section-header">
           <h2 className="section-title">Browse All Apps</h2>
           <span className="section-count">
-            {filtered.length} app{filtered.length !== 1 ? 's' : ''}
+            {filtered.length} app{filtered.length !== 1 ? "s" : ""}
           </span>
         </div>
 
         {/* Category filter */}
-        <div className="filter-bar" role="group" aria-label="Filter by category">
-          {CATEGORIES.map(cat => (
+        <div
+          className="filter-bar"
+          role="group"
+          aria-label="Filter by category"
+        >
+          {CATEGORIES.map((cat) => (
             <button
               key={cat}
-              className={`filter-btn${activeCategory === cat ? ' active' : ''}`}
+              className={`filter-btn${activeCategory === cat ? " active" : ""}`}
               onClick={() => setActiveCategory(cat)}
               aria-pressed={activeCategory === cat}
             >
@@ -80,9 +104,7 @@ export default function LandingPage() {
         {/* Grid */}
         <div className="app-grid">
           {filtered.length > 0 ? (
-            filtered.map(app => (
-              <AppCard key={app.id} app={app} />
-            ))
+            filtered.map((app) => <AppCard key={app.id} app={app} />)
           ) : (
             <div className="empty-state">
               <div className="empty-state-icon">📭</div>
@@ -93,5 +115,5 @@ export default function LandingPage() {
         </div>
       </section>
     </>
-  )
+  );
 }
