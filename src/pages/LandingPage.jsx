@@ -3,7 +3,7 @@ import { apps, CATEGORIES } from "../data/apps";
 import AppCard from "../components/AppCard";
 import FeaturedBanner from "../components/FeaturedBanner";
 import BannerImage from "../assets/logos/Banner.png";
-import appImage from "../assets/logos/banner.png";
+import appImage from "../assets/logos/Banner.png";
 
 export default function LandingPage() {
   const [activeCategory, setActiveCategory] = useState("All");
