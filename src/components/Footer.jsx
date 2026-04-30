@@ -39,7 +39,7 @@ export default function Footer() {
       </div> */}
 
       <div className="footer-bottom">
-        <span>© {year} QuizMaster. All rights reserved.</span>
+        <span>© {year} QuizApp. All rights reserved.</span>
         <span>
           Made with ♥ · <a href="#">Affiliate Disclosure</a>
         </span>

@@ -13,7 +13,7 @@ export default function Header() {
             </svg>
           </div>
           <span className="header-logo-text">
-            Quiz<span>Master</span>
+            Quiz<span>App</span>
           </span>
         </a>
 

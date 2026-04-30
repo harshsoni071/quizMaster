@@ -30,7 +30,7 @@ export default function LandingPage() {
             className="w-full h-full object-contain"
           />
         </div>
-        <div className="hero">
+        {/* <div className="hero">
           <div>
             <h1 className="hero-title">
               Apps worth
@@ -57,7 +57,7 @@ export default function LandingPage() {
               <div className="hero-stat-label">Avg rating</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       <hr className="section-divider" />
